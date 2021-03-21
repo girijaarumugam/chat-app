@@ -1,4 +1,4 @@
-package com.galata.servlets;
+package com.galata.jersey.servlets;
 
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;

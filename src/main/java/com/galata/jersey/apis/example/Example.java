@@ -1,4 +1,4 @@
-package com.galata.apis.example;
+package com.galata.jersey.apis.example;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
