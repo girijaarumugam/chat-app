@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
  *
  */
 @RestController
-@RequestMapping(value = "/galata/v1/example")
+@RequestMapping(value = "/example")
 public class SampleController {
     @RequestMapping(method = RequestMethod.GET)
     public String get(){
