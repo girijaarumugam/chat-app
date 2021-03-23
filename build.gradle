@@ -11,6 +11,7 @@
 plugins {
     // Apply the application plugin to add support for building a CLI application in Java.
     id 'war'
+    id 'java'
     id "org.gretty" version "3.0.3"
 }
 
@@ -24,12 +25,10 @@ dependencies {
     testImplementation 'junit:junit:4.13'
 
     // This dependency is used by the application.
-
-    implementation 'com.google.guava:guava:29.0-jre'
-    def jerseyVersion = '2.26'
-    implementation "org.glassfish.jersey.containers:jersey-container-servlet:$jerseyVersion"
-    implementation "org.glassfish.jersey.inject:jersey-hk2:$jerseyVersion"
     implementation "javax.servlet:javax.servlet-api:4.0.0-b07"
+    implementation group: 'org.springframework', name: 'spring-webmvc', version: '5.2.13.RELEASE'
+    implementation group: 'org.springframework', name: 'spring-core', version: '5.2.13.RELEASE'
+    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.9.4'
 
 }
 
